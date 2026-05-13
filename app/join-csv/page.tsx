@@ -33,14 +33,14 @@ export default function JoinCsvPage() {
         map2.set(key, row)
       })
       
-      const joinedHeaders = [...headers1, ...headers2.filter((h, i) => i !== joinColumn2)]
+      const joinedHeaders = [...headers1, ...headers2.filter((h: any, i: number) => i !== joinColumn2)]
       const joinedRows: any[][] = [joinedHeaders]
       
       rows1.forEach(row1 => {
         const key = row1[joinColumn1]
         const row2 = map2.get(key)
         if (row2) {
-          const joinedRow = [...row1, ...row2.filter((_, i) => i !== joinColumn2)]
+          const joinedRow = [...row1, ...row2.filter((_: any, i: number) => i !== joinColumn2)]
           joinedRows.push(joinedRow)
         }
       })

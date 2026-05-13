@@ -24,7 +24,7 @@ export function convertToExcel(data: any[], filename: string): void {
 }
 
 export function convertCSVToExcelText(csvText: string): string {
-  const data = Papa.parse(csvText, { header: false }).data
+  const data = Papa.parse(csvText, { header: false }).data as any[][]
   const worksheet = XLSX.utils.aoa_to_sheet(data)
   const workbook = XLSX.utils.book_new()
   XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1')
@@ -105,7 +105,7 @@ export function csvToJSON(data: any[], headers?: string[]): any[] {
   
   return rows.map(row => {
     const obj: any = {}
-    headerRow.forEach((header, index) => {
+    headerRow.forEach((header: any, index: number) => {
       obj[header] = row[index]
     })
     return obj
