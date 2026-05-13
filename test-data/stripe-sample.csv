@@ -1,0 +1,6 @@
+payout_id,created,amount,fee,net,type
+po_1,2024-01-01,10000,300,9700,charge
+po_1,2024-01-01,5000,150,4850,charge
+po_2,2024-01-03,2000,60,1940,charge
+po_2,2024-01-03,-500,0,-500,refund
+po_3,2024-01-05,8000,240,7760,charge
