@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import PageSeo from '@/components/PageSeo'
+import { SEO_PAGES } from '@/lib/seo'
 import { parseCSVFile, filterCSV } from '@/lib/csvUtils'
 import Papa from 'papaparse'
 
@@ -50,6 +52,7 @@ export default function FilterCsvPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <PageSeo title={SEO_PAGES['filter-csv'].title} description={SEO_PAGES['filter-csv'].description} />
       <div className="max-w-4xl mx-auto px-6 py-12">
         <Link href="/tools" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8">
           ← Back to all tools

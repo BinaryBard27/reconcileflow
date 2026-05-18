@@ -1,10 +1,14 @@
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
+import Providers from "@/components/Providers"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "ReconcileFlow - Professional Stripe Bank Reconciliation Tool",
-  description: "Automatically match Stripe payouts with bank statements. Professional tool with confidence scoring and manual review. No signup required.",
+  title: {
+    default: "ReconcileFlow",
+    template: "%s",
+  },
+  description: "Stripe payout reconciliation and free CSV tools. Runs entirely in your browser.",
   keywords: ["Stripe reconciliation", "bank statement matching", "Stripe payout", "accounting automation", "professional reconciliation tool"],
   authors: [{ name: "ReconcileFlow" }],
   openGraph: {
@@ -39,7 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
         <Analytics />
       </body>
     </html>

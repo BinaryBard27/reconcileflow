@@ -1,7 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import PageSeo from '@/components/PageSeo'
 import Header from '@/components/Header'
+import { SEO_PAGES } from '@/lib/seo'
 import FileUpload from '@/components/FileUpload'
 import Results from '@/components/Results'
 import ColumnMappingUI from '@/components/ColumnMapping'
@@ -112,6 +114,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#fafbff] overflow-hidden">
+      <PageSeo title={SEO_PAGES.home.title} description={SEO_PAGES.home.description} />
       <Header />
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative">

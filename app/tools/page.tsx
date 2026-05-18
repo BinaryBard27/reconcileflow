@@ -1,5 +1,7 @@
 import Header from '@/components/Header'
+import PageSeo from '@/components/PageSeo'
 import ToolCard from '@/components/ToolCard'
+import { SEO_PAGES } from '@/lib/seo'
 
 const tools = [
   {
@@ -35,6 +37,7 @@ const tools = [
 export default function ToolsPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <PageSeo title={SEO_PAGES.tools.title} description={SEO_PAGES.tools.description} />
       <Header />
 
       <div className="max-w-7xl mx-auto px-6 py-16">

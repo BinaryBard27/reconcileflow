@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://reconcileflow.com</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://reconcileflow.com/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://reconcileflow.com/tools</loc>
+    <loc>https://reconcileflow.com/stripe-payout-reconciliation-tool</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://reconcileflow.com/clean-csv</loc>
+    <loc>https://reconcileflow.com/reconcile-stripe-bank-statement</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://reconcileflow.com/deduplicate-csv</loc>
+    <loc>https://reconcileflow.com/stripe-reconciliation-uk</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reconcileflow.com/date-formatter</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
